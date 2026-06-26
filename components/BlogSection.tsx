@@ -36,9 +36,9 @@ export default function BlogSection() {
           >
             Quant · NBA Analytics · Ideas
           </p>
-          {/* <h3 className="font-display" style={{ fontWeight: 600, fontSize: "1.35rem", marginBottom: "0.75rem" }}>
+          <h3 className="font-display" style={{ fontWeight: 600, fontSize: "1.35rem", marginBottom: "0.75rem" }}>
             blog.ldvyyc.com
-          </h3> */}
+          </h3>
           <p style={{ fontSize: "0.9rem", lineHeight: 1.7, color: "var(--text-dim)", marginBottom: "1.5rem" }}>
             Long-form writing on quant finance, NBA data analytics, and whatever I&apos;m obsessing over.
             Chinese-language NBA analytics video channel launching soon — using the same quant toolkit to decode basketball.

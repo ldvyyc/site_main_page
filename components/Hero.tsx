@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-const NAME = "LDV    YYC";
+const NAME = "LDVYYC";
 const TAGLINE_PREFIX = "Quant in NYC";
 const TAGLINE_SUFFIX = ", always learning";
 
@@ -31,12 +31,12 @@ export default function Hero() {
       className="relative z-10 min-h-screen flex flex-col items-center justify-center text-center px-6"
     >
       {/* Eyebrow */}
-      {/* <p
+      <p
         className="font-mono text-xs tracking-[0.22em] uppercase mb-6 animate-[fadeUp_0.8s_0.3s_both]"
         style={{ fontFamily: "var(--font-mono)", color: "var(--cyan)" }}
       >
         <span style={{ color: "var(--muted)" }}>// </span>ldvyyc.com
-      </p> */}
+      </p>
 
       {/* Name */}
       <h1
@@ -45,7 +45,6 @@ export default function Hero() {
           fontFamily: "var(--font-display)",
           fontSize: "clamp(4.5rem,13vw,11rem)",
           letterSpacing: "-0.03em",
-          marginBottom: "2rem",
         }}
       >
         {NAME.split("").map((char, i) => (
@@ -53,7 +52,7 @@ export default function Hero() {
             key={i}
             className="inline-block hover:-translate-y-2 hover:scale-110 transition-transform duration-150"
             style={{
-              background: "linear-gradient(135deg, var(--text) 0%, var(--cyan) 55%, var(--orange) 100%)",
+              background: "linear-gradient(135deg, var(--text) 0%, var(--cyan) 50%, var(--orange) 100%)",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               backgroundClip: "text",
@@ -68,7 +67,7 @@ export default function Hero() {
       <p
         className="font-mono animate-[fadeUp_0.8s_0.65s_both]"
         style={{
-          fontSize: "clamp(0.9rem,2vw,1.15rem)",
+          fontSize: "clamp(0.7rem, 1.4vw, 0.9rem)",
           color: "var(--muted)",
           letterSpacing: "0.18em",
           marginBottom: "1rem",

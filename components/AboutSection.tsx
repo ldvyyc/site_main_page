@@ -35,7 +35,7 @@ export default function AboutSection() {
 
       <div className="about-grid">
         <div className="reveal about-bio" style={{
-          background: "rgba(7,10,17,0.72)",
+          background: "rgba(5,5,8,0.72)",
           backdropFilter: "blur(6px)",
           WebkitBackdropFilter: "blur(6px)",
           borderRadius: 8,
@@ -59,7 +59,7 @@ export default function AboutSection() {
 
         <div className="reveal" style={{
           transitionDelay: "0.12s",
-          background: "rgba(7,10,17,0.72)",
+          background: "rgba(5,5,8,0.72)",
           backdropFilter: "blur(6px)",
           WebkitBackdropFilter: "blur(6px)",
           borderRadius: 8,

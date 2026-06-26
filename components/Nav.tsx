@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -12,9 +13,9 @@ export default function Nav() {
   }, []);
 
   const links = [
-    { href: "#space", label: "Space" },
-    { href: "#blog",  label: "Blog" },
-    { href: "#about", label: "About" },
+    { href: "#space",   label: "Space" },
+    { href: "#blog",    label: "Blog" },
+    { href: "#about",   label: "About" },
     { href: "#connect", label: "Connect" },
     { href: "https://resume.ldvyyc.com", label: "Résumé", external: true },
   ];
@@ -28,30 +29,62 @@ export default function Nav() {
         display: "flex",
         alignItems: "center",
         justifyContent: "space-between",
-        padding: "1.4rem 4rem",
-        background: scrolled ? "rgba(11,14,20,0.85)" : "rgba(11,14,20,0.5)",
-        backdropFilter: "blur(14px)",
-        WebkitBackdropFilter: "blur(14px)",
+        padding: "1rem 4rem",
+        background: scrolled ? "rgba(5,5,8,0.88)" : "rgba(5,5,8,0.45)",
+        backdropFilter: "blur(16px)",
+        WebkitBackdropFilter: "blur(16px)",
         borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "1px solid transparent",
         transition: "all 0.3s",
       }}
     >
+      {/* Logo: image + text */}
       <Link
         href="/"
-        className="font-mono nav-logo"
         style={{
-          fontSize: "1.25rem",
-          fontWeight: 500,
-          letterSpacing: "0.04em",
-          color: "var(--text)",
+          display: "flex",
+          alignItems: "center",
+          gap: "0.65rem",
           textDecoration: "none",
-          transition: "color 0.2s",
+          transition: "opacity 0.2s",
         }}
+        onMouseEnter={e => (e.currentTarget.style.opacity = "0.8")}
+        onMouseLeave={e => (e.currentTarget.style.opacity = "1")}
       >
-        ldv<span style={{ color: "var(--orange)" }}>/</span>yyc
+        <Image
+          src="/logo.png"
+          alt="ldvyyc logo"
+          width={32}
+          height={32}
+          style={{
+            borderRadius: 6,
+            flexShrink: 0,
+          }}
+        />
+        <span
+          className="font-mono"
+          style={{
+            fontSize: "1.15rem",
+            fontWeight: 500,
+            letterSpacing: "0.04em",
+            color: "var(--text)",
+          }}
+        >
+          ldv<span style={{ color: "var(--orange)" }}>/</span>yyc
+        </span>
       </Link>
 
-      <ul className="nav-links" style={{ display: "flex", alignItems: "center", gap: "2.5rem", listStyle: "none", margin: 0, padding: 0 }}>
+      {/* Nav links */}
+      <ul
+        className="nav-links"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "2.5rem",
+          listStyle: "none",
+          margin: 0,
+          padding: 0,
+        }}
+      >
         {links.map(({ href, label, external }) => (
           <li key={label}>
             <a

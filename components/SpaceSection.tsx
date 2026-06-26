@@ -12,7 +12,7 @@ const SPACE_CARDS = [
     descFront: "Kalshi prediction-market performance dashboard. Drop in your CSV, get deep P&L analytics.",
     descBack: "Track Kalshi trading performance — P&L curves, win rates, and edge analysis for serious prediction-market traders.",
     href: "https://kdash.ldvyyc.com",
-    accent: "#FF6B35",
+    accent: "#C8D44A",
   },
   {
     icon: "🧠",
@@ -21,7 +21,7 @@ const SPACE_CARDS = [
     descFront: "Quant interview prep hub — stats, finance, coding, ML, and brain teasers in one place.",
     descBack: "Notes & practice across 8 sections: Industry, Brain Teasers, Maths, Stats, Finance, Coding, ML, and Companies.",
     href: "https://prep.ldvyyc.com",
-    accent: "#00D4FF",
+    accent: "#5BB8E8",
   },
   {
     icon: "🎬",
@@ -30,7 +30,7 @@ const SPACE_CARDS = [
     descFront: "Data-driven NBA analytics — decoding basketball with the quant toolkit. Videos & visualizations.",
     descBack: "Chinese-language NBA analytics channel. Charts, animations, and deep dives into 40 years of league data.",
     comingSoon: true,
-    accent: "#A78BFA",
+    accent: "#3A8B5C",
   },
 ];
 // ────────────────────────────────────────────────────────────────────────────

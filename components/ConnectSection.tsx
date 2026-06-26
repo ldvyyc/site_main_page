@@ -17,7 +17,7 @@ const SOCIALS = [
   {
     name: "LinkedIn",
     // ★ Replace with your actual LinkedIn URL
-    href: "https://linkedin.com/in/YOUR_LINKEDIN",
+    href: "https://linkedin.com/in/yuchen-yu",
     glow: "#0A66C2",
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -63,7 +63,7 @@ export default function ConnectSection() {
       <div
         className="reveal"
         style={{
-          background: "rgba(7,10,17,0.72)",
+          background: "rgba(5,5,8,0.72)",
           backdropFilter: "blur(6px)",
           WebkitBackdropFilter: "blur(6px)",
           borderRadius: 8,
